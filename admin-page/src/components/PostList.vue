@@ -66,7 +66,7 @@ export default {
 }
 
 .grid-container img {
-  max-width: 300px;
+  max-width: 100px;
   width: 100%;
 }
 
