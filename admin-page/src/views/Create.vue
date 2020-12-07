@@ -1,23 +1,33 @@
 <template>
   <div class="create">
-    <h1>Opret et ønske 🎁</h1>
+    <h1>Opret et produkt</h1>
     <form>
       <input
         type="text"
+        v-model="post.name"
+        placeholder="Navn på øl"
+        required
+      />
+      <label for="kategori">Vælg øl kategori:</label>
+      <select
+        id="kategori"
+        v-model="post.category"
+        required
+      >
+    <option value="Jule øl">Jule øl</option>
+    <option value="IpA">IPA</option>
+    <option value="Stout">Stout</option>
+    <option value="Belgisk ale">Belgisk ale</option>
+    <option value="Porter">Porter</option>
+    <option value="BarleyWine">Barley wine</option>
+    <option value="Hvede øl">Hvede øl</option>
+    <option value="Lager">Lager</option>
+    <option value="Sour">Sour</option>
+      </select><br>
+      <input
+        type="text"
         v-model="post.description"
-        placeholder="Beskrivelse af ønske"
-        required
-      />
-      <input
-        type="text"
-        v-model="post.butik"
-        placeholder="Hvilken butik?"
-        required
-      />
-      <input
-        type="text"
-        v-model="post.link"
-        placeholder="Indsæt link til produkt"
+        placeholder="Beskrivelse af øl"
         required
       />
       <input
@@ -32,7 +42,7 @@
       <div>
         <img :src="post.image" class="image-preview" />
       </div>
-      <button class="example_a" type="button" v-on:click="createPost">Opret ønske</button>
+      <button class="example_a" type="button" v-on:click="createPost">Opret produkt</button>
     </form>
   </div>
 </template>
@@ -44,7 +54,6 @@ export default {
   data() {
     return {
       post: {
-        description: "",
         image: null
       }
     };

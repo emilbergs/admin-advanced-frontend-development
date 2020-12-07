@@ -16,10 +16,5 @@ export default {
 };
 </script>
 <style>
-  #mig {
-    width: 10%;
-    position: absolute;
-    top: 25px;
-    left: 25px;
-  }
+    
 </style>

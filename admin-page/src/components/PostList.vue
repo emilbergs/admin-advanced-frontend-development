@@ -4,8 +4,8 @@
   <div class="grid-container">
     <article v-for="post in posts" :key="post.id">
       <img :src="post.image" />
-      <h3> {{ post.description }} </h3>
-      <p>Link: <a v-bind:href="post.link" target="_blank">{{ post.butik }}</a></p>
+      <h3> {{ post.name }} </h3>
+      <p> {{post.category}} </p>
       <router-link :to="{ name: 'Update', params: { post: post } }">
         <button class="example_a">Opdater</button>
       </router-link>
@@ -72,8 +72,6 @@ export default {
 
 .grid-container h3 {
   font-weight: 200;
-  margin: 0 0 0.5em;
-  height: 52px;
 }
 .grid-container p {
   margin: 0;
