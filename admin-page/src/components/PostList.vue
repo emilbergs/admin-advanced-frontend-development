@@ -6,6 +6,7 @@
       <img :src="post.image" />
       <h3> {{ post.name }} </h3>
       <p> {{post.category}} </p>
+      <p> {{post.pris}} </p>
       <router-link :to="{ name: 'Update', params: { post: post } }">
         <button class="example_a">Opdater</button>
       </router-link>

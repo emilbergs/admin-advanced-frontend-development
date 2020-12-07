@@ -15,7 +15,7 @@
         required
       >
     <option value="Jule øl">Jule øl</option>
-    <option value="IpA">IPA</option>
+    <option value="IPA">IPA</option>
     <option value="Stout">Stout</option>
     <option value="Belgisk ale">Belgisk ale</option>
     <option value="Porter">Porter</option>
@@ -28,6 +28,24 @@
         type="text"
         v-model="post.description"
         placeholder="Beskrivelse af øl"
+        required
+      />
+      <input
+        type="text"
+        v-model="post.cl"
+        placeholder="cl af øl"
+        required
+      />
+      <input
+        type="text"
+        v-model="post.alc"
+        placeholder="alc af øl"
+        required
+      />
+      <input
+        type="text"
+        v-model="post.pris"
+        placeholder="pris på øl"
         required
       />
       <input

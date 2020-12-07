@@ -31,6 +31,24 @@
         required
       />
       <input
+        type="text"
+        v-model="post.cl"
+        placeholder="cl af øl"
+        required
+      />
+      <input
+        type="text"
+        v-model="post.alc"
+        placeholder="alc af øl"
+        required
+      />
+      <input
+        type="text"
+        v-model="post.pris"
+        placeholder="pris på øl"
+        required
+      />
+      <input
         type="file"
         ref="fileInput"
         accept="image/*"
