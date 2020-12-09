@@ -14,13 +14,13 @@
         v-model="post.category"
         required
       >
-    <option value="Jule øl">Jule øl</option>
+    <option value="Juleøl">Jule øl</option>
     <option value="IpA">IPA</option>
     <option value="Stout">Stout</option>
-    <option value="Belgisk ale">Belgisk ale</option>
+    <option value="Belgisk Ale">Belgisk ale</option>
     <option value="Porter">Porter</option>
-    <option value="BarleyWine">Barley wine</option>
-    <option value="Hvede øl">Hvede øl</option>
+    <option value="Barley Wine">Barley wine</option>
+    <option value="Hvedeøl">Hvede øl</option>
     <option value="Lager">Lager</option>
     <option value="Sour">Sour</option>
       </select><br>
